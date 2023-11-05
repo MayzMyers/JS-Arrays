@@ -1,5 +1,6 @@
 function task1() {
-  let arr = prompt(`Введите массив чисел`);
+  let arr = Array.from(Array(10),()=>{return Math.round(Math.random()*10)});
+  alert(`Дан массив чисел: ${arr}`)
   let summ = arr.reduce(function (sum, elem) {
     if (elem % 2 == 0) sum += Math.sqrt(elem);
     return sum;
