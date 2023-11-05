@@ -1,11 +1,15 @@
 function task1() {
-  let arr = Array.from(Array(10),()=>{return Math.round(Math.random()*10)});
-  alert(`Дан массив чисел: ${arr}`)
+  let arr = Array.from(Array(10), () => {
+    return Math.round(Math.random() * 10);
+  });
+  alert(`Дан массив чисел: ${arr}`);
   let summ = arr.reduce(function (sum, elem) {
     if (elem % 2 == 0) sum += Math.sqrt(elem);
     return sum;
   }, 0);
-  alert(`Сумма квадратных корней для всех чётных чисел равна ${Math.round(summ)}`);
+  alert(
+    `Сумма квадратных корней для всех чётных чисел равна ${Math.round(summ)}`
+  );
 }
 
 function task2() {
@@ -43,4 +47,3 @@ function task9() {
 function task10() {
   alert("task10");
 }
-
