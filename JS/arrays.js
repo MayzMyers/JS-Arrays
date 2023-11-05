@@ -3,9 +3,9 @@ function task1() {
   alert(`Дан массив чисел: ${arr}`)
   let summ = arr.reduce(function (sum, elem) {
     if (elem % 2 == 0) sum += Math.sqrt(elem);
-    return Math.round(sum);
+    return sum;
   }, 0);
-  alert(`Сумма квадратных корней для всех чётных чисел равна ${summ}`);
+  alert(`Сумма квадратных корней для всех чётных чисел равна ${Math.round(summ)}`);
 }
 
 function task2() {
