@@ -3,7 +3,7 @@ function task1() {
   alert(`Дан массив чисел: ${arr}`)
   let summ = arr.reduce(function (sum, elem) {
     if (elem % 2 == 0) sum += Math.sqrt(elem);
-    return sum;
+    return Math.round(sum);
   }, 0);
   alert(`Сумма квадратных корней для всех чётных чисел равна ${summ}`);
 }
