@@ -42,3 +42,4 @@ function task9() {
 function task10() {
   alert("task10");
 }
+
